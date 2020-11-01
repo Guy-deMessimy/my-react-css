@@ -2,6 +2,12 @@ import styles from './css.module.css';
 import React from 'react';
 import MySendForm from './components/MySendForm';
 
+// POURQUOI LE CHOIX DE MODULE CSS
+
+// 1- fichier CSS distinct des fichiers de composants JSX
+// 2- pas de mélange CSS/JSX dans la rédaction
+// 3- statistiques d'utilisation = 2eme dans le ranking en terme d'intérêt, satisfaction et facilité d'approche
+
 const App = () => {
   return (
     <div className={styles.App}>
@@ -16,11 +22,11 @@ const App = () => {
           <a href="#3" title="Donner 3 étoiles">☆</a>
           <a href="#2" title="Donner 2 étoiles">☆</a>
           <a href="#1" title="Donner 1 étoile">☆</a>
-          <p className={styles.vote}>4,5 (413)</p>
+          <p className={styles.vote}><strong>4,5 (413)</strong></p>
         </div>
         <h4 className={styles.mytitle2}>Discover the soul of western Australia</h4>
         <p className={styles.description}>From 3 hours drive to Perth and easily accessible by public airlines and bus transportation. <br>
-        </br>Visit the vineyards, discover the surf and windsurf famous spot, and enjoy nighlife with some friends.  </p>
+        </br>Visit the vineyards, discover the surf and windsurf famous spot, and enjoy nighlife with friends.  </p>
       </section>
       <hr className={styles.trait}/>
       <footer className={styles.appfooter}>

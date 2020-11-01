@@ -4,53 +4,45 @@
   padding: 0;  
 }
 .App {
-  border: solid 2px black;
-  width: 900px;
-  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 500px 100px 500px;
+  width: 900px;
+  height: 900px;
   position: relative;
   border-radius: 20px;
+  margin: 20px 500px 100px 500px;
+  border: solid 2px black;
 }
 .Appheader {
-  width: 800px;
-  display: flex;
-  border: solid 2px black;
   display: flex;
   justify-content: center;
+  width: 800px;
 }
 .Applogo {
   width: 750px;
   height: 450px;
   border-radius: 20px;
   filter: saturate(1);
-
+  box-shadow: 5px 5px 5px black;
 }
 .Applogo:hover {
   filter: grayscale(100);
-
 }
 .mytitle {
-  font-size: 60px;
-  border: solid 2px black;
-  margin-top: 10px;
   width: 800px;
   text-align: center;
+  font-size: 60px;
+  margin-top: 2px;
 }
 .rating {
-  margin-top: 10px;
-  width: 800px;
-  border: solid 2px black;
   display: flex;
   justify-content: start;
+  width: 800px;
+  margin-top: 5px;
   padding: 10px 10px 10px 10px;
-}
-.vote {
-  margin-left: 10px;
-  font-size: 15px;
+  
 }
 .rating a:hover,
 .rating a:focus,
@@ -59,78 +51,65 @@
   color: orange;
   cursor: pointer;
 }
+.vote {
+  margin-left: 10px;
+  font-size: 15px;
+}
 .mytitle2 {
-  margin-top: 10px;
-  border: solid 3px black;
   width: 800px;
+  margin-top: 10px;
 }
 .description {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: solid 1px black;
   width: 800px;
+  text-align: justify;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 .appfooter {
-  border: solid 2px black;
-  margin-top: 10px;
   width: 800px;
+  margin-top: px;
 }
 .trait {
   width: 800px;
+  border: solid 2px black;
 }
 .mytitle3 {
-  border: solid 1px black;
-  margin-top: 10px;
-  margin-bottom: 10px;
   width: 800px;
   text-align: center;
-}
-.buttongroup {
-  width: 800px;;
-  display: flex;
-  justify-content: space-between;
-  border: solid 2px black;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
+.buttongroup {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;;
+  margin-bottom: 10px;
+
+}
 .button {
-  background-color: rgb(114, 55, 0);
   width: 150px;
   height: 30px;
+  color: white;
   font-weight: bold;
   border-radius: 15px;
-  color: white;
+  background-color: rgb(44, 43, 43);
 }
 .button:hover {
-  background-color: darkblue;
+  background-color: black;
 }
 .mytitle4 {
-  border: solid 2px black;
   width: 400px;
+  border: solid 2px black;
 }
 .comments {
   display: flex;
-  border: solid 1px red;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .button2 {
   width: 100px;
-  background-color: black;;
   color: white;
   border-radius: 15px;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: black;;
 }
