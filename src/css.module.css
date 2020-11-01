@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+.App {
+  border: solid 2px black;
+  width: 900px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 500px 100px 500px;
+  position: relative;
+  border-radius: 20px;
+}
+.Appheader {
+  width: 800px;
+  display: flex;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+}
+.Applogo {
+  width: 750px;
+  height: 450px;
+  border-radius: 20px;
+  filter: saturate(1);
+
+}
+.Applogo:hover {
+  filter: grayscale(100);
+
+}
+.mytitle {
+  font-size: 60px;
+  border: solid 2px black;
+  margin-top: 10px;
+  width: 800px;
+  text-align: center;
+}
+.rating {
+  margin-top: 10px;
+  width: 800px;
+  border: solid 2px black;
+  display: flex;
+  justify-content: start;
+  padding: 10px 10px 10px 10px;
+}
+.vote {
+  margin-left: 10px;
+  font-size: 15px;
+}
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+  color: orange;
+  cursor: pointer;
+}
+.mytitle2 {
+  margin-top: 10px;
+  border: solid 3px black;
+  width: 800px;
+}
+.description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 1px black;
+  width: 800px;
+}
+.appfooter {
+  border: solid 2px black;
+  margin-top: 10px;
+  width: 800px;
+}
+.trait {
+  width: 800px;
+}
+.mytitle3 {
+  border: solid 1px black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 800px;
+  text-align: center;
+}
+.buttongroup {
+  width: 800px;;
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px black;
+  margin-bottom: 10px;
+}
+.button {
+  background-color: rgb(114, 55, 0);
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 15px;
+  color: white;
+}
+.button:hover {
+  background-color: darkblue;
+}
+.mytitle4 {
+  border: solid 2px black;
+  width: 400px;
+}
+.comments {
+  display: flex;
+  border: solid 1px red;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.button2 {
+  width: 100px;
+  background-color: black;;
+  color: white;
+  border-radius: 15px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
